@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase Fleet Management</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: #0d6efd !important;
+        }
+        
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #0d6efd;
+            color: #212529;
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background-color: #0d6efd;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .img-thumbnail {
+            border-radius: 8px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WELCOME TO PARK EASE</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <i class="bi bi-car-front"></i> ParkEase Fleet Management
+            </span>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-fluid">
+        <!-- Users Section -->
+        <h2 class="section-title">👥 Users</h2>
+        <div id="users" class="row mb-5"></div>
+
+        <!-- Vehicles Section -->
+        <h2 class="section-title">🚗 Vehicles</h2>
+        <div id="vehicles" class="row mb-5"></div>
+
+        <!-- Signouts Section -->
+        <h2 class="section-title">📋 Vehicle Signouts</h2>
+        <div id="signouts" class="row mb-5"></div>
+
+        <!-- Battery Records Section -->
+        <h2 class="section-title">🔋 Battery Records</h2>
+        <div id="batteryRecords" class="row mb-5"></div>
+
+        <!-- Tyre Services Section -->
+        <h2 class="section-title">🛞 Tyre Services</h2>
+        <div id="tyreServices" class="row mb-5"></div>
+
+        <!-- Reports Section -->
+        <h2 class="section-title">📊 Reports</h2>
+        <div id="reports" class="row mb-5"></div>
+
+        <!-- Receipts Section -->
+        <h2 class="section-title">💰 Receipts</h2>
+        <div id="receipts" class="row mb-5"></div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

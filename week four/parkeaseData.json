@@ -1,0 +1,229 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"firstName": "Aisha",
+			"lastName": "Khan",
+			"email": "aisha.khan@example.com",
+			"phone": "+254712345678",
+			"role": "admin",
+			"photoUrl": "https://example.com/photos/users/aisha-khan.jpg",
+			"createdAt": "2025-10-01T09:12:00Z"
+		},
+		{
+			"id": 2,
+			"firstName": "Brian",
+			"lastName": "Mwangi",
+			"email": "brian.mwangi@example.com",
+			"phone": "+254723456789",
+			"role": "staff",
+			"photoUrl": "https://example.com/photos/users/brian-mwangi.jpg",
+			"createdAt": "2025-11-15T11:30:00Z"
+		},
+		{
+			"id": 3,
+			"firstName": "Celeste",
+			"lastName": "Otieno",
+			"email": "celeste.otieno@example.com",
+			"phone": "+254734567890",
+			"role": "mechanic",
+			"photoUrl": "https://example.com/photos/users/celeste-otieno.jpg",
+			"createdAt": "2025-12-05T08:05:00Z"
+		},
+		{
+			"id": 4,
+			"firstName": "David",
+			"lastName": "Muriuki",
+			"email": "david.muriuki@example.com",
+			"phone": "+254745678901",
+			"role": "driver",
+			"photoUrl": "https://example.com/photos/users/david-muriuki.jpg",
+			"createdAt": "2026-01-20T07:45:00Z"
+		}
+	],
+	"vehicles": [
+		{
+			"id": 1,
+			"plate": "KBA-123A",
+			"make": "Toyota",
+			"model": "Probox",
+			"year": 2018,
+			"ownerId": 1,
+			"status": "available",
+			"photoUrl": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D",
+			"odometer": 81200
+		},
+		{
+			"id": 2,
+			"plate": "KCB-456B",
+			"make": "Nissan",
+			"model": "NV200",
+			"year": 2019,
+			"ownerId": 1,
+			"status": "in_service",
+			"photoUrl": "https://images.unsplash.com/photo-1542362567-b07e54358753?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D",
+			"odometer": 94050
+		},
+		{
+			"id": 3,
+			"plate": "KDA-789C",
+			"make": "Isuzu",
+			"model": "D-Max",
+			"year": 2020,
+			"ownerId": 2,
+			"status": "signed_out",
+			"photoUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D",
+			"odometer": 56020
+		},
+		{
+			"id": 4,
+			"plate": "KEL-001D",
+			"make": "Toyota",
+			"model": "Axio",
+			"year": 2017,
+			"ownerId": 2,
+			"status": "available",
+			"photoUrl": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnN8ZW58MHx8MHx8fDA%3D",
+			"odometer": 125600
+		},
+		{
+			"id": 5,
+			"plate": "KFG-234E",
+			"make": "Mitsubishi",
+			"model": "L200",
+			"year": 2021,
+			"ownerId": 3,
+			"status": "available",
+			"photoUrl": "https://images.unsplash.com/photo-1616628184417-9c8b2e5f1a2c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D",
+			"odometer": 3000
+		}
+	],
+	"receipts": [
+		{
+			"id": 1001,
+			"userId": 1,
+			"vehicleId": 2,
+			"amount": 6200,
+			"currency": "KES",
+			"date": "2026-02-10T10:15:00Z",
+			"items": [
+				{ "description": "Brake pads", "qty": 1, "price": 3200 },
+				{ "description": "Labour", "qty": 1, "price": 3000 }
+			],
+			"paymentMethod": "mpesa"
+		},
+		{
+			"id": 1002,
+			"userId": 3,
+			"vehicleId": 1,
+			"amount": 1800,
+			"currency": "KES",
+			"date": "2026-01-22T14:05:00Z",
+			"items": [
+				{ "description": "Tyre repair", "qty": 1, "price": 800 },
+				{ "description": "Balancing", "qty": 1, "price": 1000 }
+			],
+			"paymentMethod": "cash"
+		}
+	],
+	"signouts": [
+		{
+			"id": 5001,
+			"userId": 4,
+			"vehicleId": 3,
+			"checkoutAt": "2026-02-28T07:00:00Z",
+			"expectedReturn": "2026-02-28T18:00:00Z",
+			"actualReturn": null,
+			"odometerOut": 55990,
+			"odometerIn": null,
+			"purpose": "Client deliveries",
+			"status": "out"
+		},
+		{
+			"id": 5002,
+			"userId": 2,
+			"vehicleId": 1,
+			"checkoutAt": "2026-02-15T09:30:00Z",
+			"expectedReturn": "2026-02-15T17:30:00Z",
+			"actualReturn": "2026-02-15T17:10:00Z",
+			"odometerOut": 81120,
+			"odometerIn": 81200,
+			"purpose": "Station run",
+			"status": "returned"
+		}
+	],
+	"tyreServices": [
+		{
+			"id": 3001,
+			"vehicleId": 1,
+			"date": "2026-01-22T13:50:00Z",
+			"serviceType": "repair",
+			"tyresChanged": 0,
+			"notes": "Puncture repaired on front right",
+			"cost": 800,
+			"provider": "Celeste Auto Repairs"
+		},
+		{
+			"id": 3002,
+			"vehicleId": 4,
+			"date": "2025-12-11T09:00:00Z",
+			"serviceType": "replacement",
+			"tyresChanged": 2,
+			"notes": "Replaced two rear tyres",
+			"cost": 7200,
+			"provider": "TyreWorld Nairobi"
+		}
+	],
+	"batteryRecords": [
+		{
+			"id": 4001,
+			"vehicleId": 2,
+			"date": "2026-02-10T09:40:00Z",
+			"batteryModel": "Exide-60Ah",
+			"capacityAh": 60,
+			"installedBy": 3,
+			"cost": 6500,
+			"warrantyMonths": 12,
+			"notes": "Replaced due to slow cranking"
+		},
+		{
+			"id": 4002,
+			"vehicleId": 1,
+			"date": "2025-06-20T10:20:00Z",
+			"batteryModel": "ACDelco-55Ah",
+			"capacityAh": 55,
+			"installedBy": 3,
+			"cost": 5800,
+			"warrantyMonths": 12,
+			"notes": "Routine replacement"
+		}
+	],
+	"reports": [
+		{
+			"id": "R-2026-02-01",
+			"title": "Monthly Utilization - February 2026",
+			"createdBy": 1,
+			"createdAt": "2026-03-01T08:00:00Z",
+			"type": "utilization",
+			"summary": "Fleet utilization summary for February 2026",
+			"details": [
+				"Total signouts: 42",
+				"Average daily utilization: 68%",
+				"Vehicles requiring service: Vehicle IDs 2, 3"
+			]
+		},
+		{
+			"id": "R-2026-01-18",
+			"title": "Service Log - Q1 Preparations",
+			"createdBy": 3,
+			"createdAt": "2026-01-18T12:30:00Z",
+			"type": "maintenance",
+			"summary": "Planned maintenance items and recent repairs",
+			"details": [
+				"Brake pad replacements: 3",
+				"Battery replacements: 1",
+				"Tyre replacements: 4"
+			]
+		}
+	]
+}
