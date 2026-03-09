@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading" id="mains-Heading">hello world, this is my version 2 thank you for using my update</h1>
+    <h1 class="heading" id="second-heading">welcome to my world</h1>
+    <h1 class="heading" id="third-heading">this is my website</h1>
+    <p><a href="registration.html">Go to Registration Form</a></p>
+    <p id="para"></p>
+    <div class="mb-3">
+        <label for="userName" class="form-label">User name:</label>
+        <input type="text" class="form-control" id="userName" required>
+    </div>
+    <h1></h1>
+
+    <button id="storeButton">Store</button>
+    <button id="retrieveButton">Retrieve</button>
+    <button id="removeButton">Remove</button>
+
+    <script src="webStorage.js"></script>
+
+    <script>
+        let userName = document.getElementById("userName").value;// for when the user is typing in
+        let storeBtn = document.getElementById("storeButton");
+        let retrieveBtn = document.getElementById("retrieveButton");
+        let removeBtn = document.getElementById("removeButton");
+
+        storeBtn.addEventListener()
+        retrieveBtn.addEventListener()
+        removeBtn.addEventListener()
+
+        storeBtn.onclick = function(){
+localStorage.setItem("Name","userName")
+        }
+
+    </script>
+
+    <button id="myButton">change text</button>
+    <script src="dom.js"></script>
+</body>
+
+</html>

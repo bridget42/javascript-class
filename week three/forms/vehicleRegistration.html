@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="lead">parkease user vehicle registration form</h1>
+        <form id="vehicleRegistrationForm">
+            <div class="mb-3">
+                <label for="driverName" class="form-label">Driver name:</label>
+                <input type="text" class="form-control" id="driverName" required>
+            </div>
+            <div class="mb-3">
+                <label for="vehicleType" class="form-label">Vehicle Type</label>:</label>
+                <input type="text" class="form-control" id="vehicleType" required>
+            </div>
+            <div class="mb-3">
+                <label for="vehicleNumber" class="form-label">Vehicle Number:</label>
+                <input type="text" class="form-control" id="vehicleNumber" required>
+
+                <div class="mb-3">
+                    <label for="timeIn" class="form-label">Time In</label>
+                    <input type="text" class="form-control" id="timeIn" required>
+                </div>
+                <div class="mb-3">
+                    <label for="vehicle" class="form-label">Vehicle</label>
+                    <select class="form-select" id="vehicle">
+                        <option selected>Select</option>
+                        <option value="1">Totya</option>
+                        <option value="2">Mercendes</option>
+                        <option value="3">Mark X</option>
+                         <option value="4">Totya</option>
+                        <option value="5">Mercendes</option>
+                        <option value="6">Mark X</option>
+                    </select>
+                </div>
+            
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f5f7fb;color:#222;margin:0;padding:20px}
+.container{max-width:520px;margin:24px auto;padding:20px;background:#fff;border-radius:8px;box-shadow:0 6px 18px rgba(19,35,56,0.08)}
+h1{margin:0 0 18px;font-size:24px}
+.row{display:flex;flex-direction:column;margin-bottom:12px}
+.row label{font-size:14px;margin-bottom:6px}
+.row input[type=text],.row input[type=email],.row input[type=password],.row input[type=tel],.row input[type=date]{padding:10px;border:1px solid #ccd6e3;border-radius:6px;font-size:14px}
+.row .error{color:#b00020;font-size:13px;height:16px;margin-top:6px}
+.radios{display:flex;gap:12px;flex-wrap:wrap;border:0;padding:0;margin:6px 0}
+.checkbox{display:flex;align-items:center;gap:8px}
+.actions{display:flex;justify-content:flex-end}
+button{background:#0b79d0;color:#fff;border:0;padding:10px 16px;border-radius:6px;font-size:15px;cursor:pointer}
+button:hover{background:#0665a7}
+.invalid{border-color:#b00020}
+.message{margin-top:14px;padding:12px;border-radius:6px;font-size:14px}
+.message.success{background:#e6f4ea;color:#0b6b2f}
+.message.error{background:#fdecea;color:#9b1d14}
+@media (max-width:520px){.container{margin:12px;padding:16px}}

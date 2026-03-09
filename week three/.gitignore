@@ -1,0 +1,6 @@
+/* adding
+committing
+pushing
+git add .  - this means to stage everything in the folder 
+git commit -m "initial"
+git push
